@@ -1,0 +1,13 @@
+name: Susurritos
+main: com.kryeit.Susurritos
+version: 1.0
+load: POSTWORLD
+api-version: 1.18
+author: muriplz
+commands:
+  m:
+    description: manda un mensaje a un jugador
+    aliases: mensaje, msg
+  r:
+    description: manda un mensaje al último jugador que te susurró
+    aliases: responder

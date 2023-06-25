@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+group 'com.kryeit'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"}
+    maven { url 'https://ci.pluginwiki.us/plugin/repository/everything/'}
+    maven { url = 'https://papermc.io/repo/repository/maven-public/'}
+    maven { url = 'https://jitpack.io'}
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compileOnly "org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT"
+    implementation 'com.github.thatsmusic99:ConfigurationMaster:v1.0.3'
+    compileOnly "net.lapismc:AFKPlus:3.3.13"
+}
+
+test {
+    useJUnitPlatform()
+}
