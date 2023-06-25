@@ -7,7 +7,7 @@ author: muriplz
 commands:
   m:
     description: manda un mensaje a un jugador
-    aliases: mensaje, msg
+    aliases: [mensaje,msg,tell]
   r:
     description: manda un mensaje al último jugador que te susurró
     aliases: responder

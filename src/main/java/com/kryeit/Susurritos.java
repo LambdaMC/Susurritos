@@ -108,7 +108,7 @@ public class Susurritos extends JavaPlugin {
 
                 addComment("\"& + Notación hexadecimal\" para usar colores.");
                 addComment("Cuando el jugador usa únicamente \"/mensaje\".");
-                addDefault("msg-usage","Usa /msg <jugador> <mensaje>.");
+                addDefault("msg-usage","Usa /mensaje <jugador> <mensaje>.");
 
                 addComment("Cuando el jugador no existe o no está conectado.");
                 addDefault("player-not-found","&cJugador no encontrado.");
@@ -123,10 +123,10 @@ public class Susurritos extends JavaPlugin {
                 addDefault("none-to-respond","&cNo tienes a nadie a quien responder.");
 
                 addComment("Esta es la primera parte del mensaje que ves cuando susurras a alguien.");
-                addDefault("you-whispered-to","&dYou whisper to %PLAYER_NAME%:%WHISPER%");
+                addDefault("you-whispered-to","&dLe has susurrado a %PLAYER_NAME%:%WHISPER%");
 
                 addComment("Esta es la primera parte del mensaje que ves cuando alguien te susurra.");
-                addDefault("someone-whispered-you","&d%PLAYER_NAME% whispers to you:%WHISPER%");
+                addDefault("someone-whispered-you","&d%PLAYER_NAME% te susurra:%WHISPER%");
 
                 addComment("Esto sale cuando no tienes permiso para ejecutar dicho comando.");
                 addDefault("no-permission","&cNo tienes permiso para ejecutar este comando.");
