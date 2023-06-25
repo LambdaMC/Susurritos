@@ -22,11 +22,6 @@ public class Reply implements CommandExecutor {
 
             Player player = (Player) sender;
 
-            if(!player.hasPermission("mensaje.responder")){
-                player.sendMessage(Utils.getMessage("no-permission"));
-                return false;
-            }
-
             if(args.length==0){
                 player.sendMessage(Utils.getMessage("no-message-written"));
                 return false;

@@ -27,11 +27,6 @@ public class Message implements CommandExecutor {
             // Inicializamos el objeto "Player" del emisor del mensaje
             Player player = (Player) sender;
 
-            if(!player.hasPermission("mensaje.mensaje")){
-                player.sendMessage(Utils.getMessage("no-permission"));
-                return false;
-            }
-
             // Cuando usa únicamente /mensaje, lo cual no debería de hacer nada, así que se manda un mensaje con información de como usar el comando (args.length sería igual a 0 en este caso)
             if(args.length==0){
                 player.sendMessage(Utils.getMessage("msg-usage"));
